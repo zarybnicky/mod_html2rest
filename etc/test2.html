@@ -1,0 +1,460 @@
+<div class="chapter after-note">
+    <div class="section" id="k2">
+        <h2>Podkapitola1<a href="#list">
+            <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+        </a>
+        </h2>
+    </div>
+    <div class="section" id="k3">
+        <h2>Podkapitola2<a href="#list">
+            <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+        </a>
+        </h2>
+        <div class="subsection" id="k4">
+            <h3>Pooddíl v textu<a href="#list">
+                <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+            </a>
+            </h3>
+            <div class="subsubsection" id="k5">
+                <h4>Poslední možná úroveň nadpisů (5)<a href="#list">
+                    <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+                </a>
+                </h4>
+                <p>Ostatní úrovně (6,7...) nadpisy budou považovány za obyčejný text.</p>
+                <p/>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="k6">
+        <h2>Převod písma<a href="#list">
+            <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+        </a>
+        </h2>
+        <p>Podporován je převod jiného než standardního písma, nejsou jen podporována písma se znakovou sadou Unicode. Můžete mít například část odstavce písmem Arial a část písmem Courier.</p>
+        <p>Písmo se převádí po slovech tzn. pokud označíme celé slovo a část druhého, převedou se obě slova do stejného písma, toho kterým slovo začíná.</p>
+    </div>
+    <div class="section" id="k7">
+        <h2>Podpora vkládání speciálních znaků<a href="#list">
+            <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+        </a>
+        </h2>
+        <p>Stačí, když uživatelé <span style="font-weight:bold;">nebudou</span> vkládat symboly z nabídky vložit -&gt; symbol. Místo tohostačí psát <span style="font-weight:bold;">HTML entity</span> přímo do dokumentu. </p>
+        <p>Více informací o entitách naleznete na <a href="http://www.w3.org/TR/REC-html40/sgml/entities.html">
+            <span>http://www.w3.org/TR/REC-html40/sgml/entities.html</span>
+        </a>
+        </p>
+        <p style="font-weight:bold;">
+            <a href="http://www.net-university.cz/navody/spec_znaky.pdf">
+                <span>Zde</span>
+            </a> uvidíte seznam všech entit (seznam čítá 5000 položek) kdy na levé straně je vidět znak, který uvidíte na internetu a v pravo je jeho <span style="font-weight:bold;">HTML entita</span>
+            <span style="font-weight:bold;">. </span>Je nutné aby entita byla napsána přesně tak jak ji uvidíte v seznamu tj. musí začínat znakem <span style="font-weight:bold;">&amp;</span>
+            <span style="font-weight:bold;">
+            </span>a končit znakem <span style="font-weight:bold;">;</span>
+        </p>
+        <p>Příklad napsání znaku α pomocí entity.Stačí napsat &amp;#945; a na internetu se zobrazí znak α.</p>
+    </div>
+    <div class="section" id="k8">
+        <h2>Vkládání tabulek<a href="#list">
+            <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+        </a>
+        </h2>
+        <p/>
+        <p>Tabulky lze do textu prostřednictvím šablony vkládat dvěma způsoby:</p>
+        <ol style="list-style: decimal;">
+            <li>
+                <span style="font-weight:bold;">Pomocí převedení na obrázek</span> (dříve jediná možná alternativa). Tento styl je nadále možný a lze jej použít u velmi složitých tabulek, které obsahují formátování, které konvertor nepřevede (viz nepodporované formátování pro tabulky)</li>
+            <li>
+                <span style="font-weight:bold;">Vytvořením tabulky pomocí MS Word</span>. Při vytváření je třeba se řídit některými pravidly.</li>
+        </ol>
+        <div class="subsection" id="k9">
+            <h3>Pravidla pro vytvoření tabulek pomocí MS Word pro šablonu Uniforu<a href="#list">
+                <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+            </a>
+            </h3>
+            <ul>
+                <li>Do textu je možné vkládat tabulky jednoduché tak i tabulky vnořené(viz obr 1).</li>
+            </ul>
+            <p/>
+            <table style="border:1px solid #000;border-collapse:collapse;">
+                <colgroup>
+                    <col style="width:257px;"/>
+                    <col style="width:60px;"/>
+                    <col style="width:49px;"/>
+                    <col style="width:120px;"/>
+                    <col style="width:120px;"/>
+                </colgroup>
+                <tr>
+                    <td style="width:260px;border:1px solid #000">
+                        <table style="border:1px solid #000;border-collapse:collapse;">
+                            <colgroup>
+                                <col style="width:75px;"/>
+                                <col style="width:75px;"/>
+                                <col style="width:92px;"/>
+                            </colgroup>
+                            <tr>
+                                <td style="width:77px;border-top:1px solid #000;border-left:1px solid #000;border-bottom:1px solid #000;border-right:1px solid #000">
+                                    <p style="text-align:justify;">Text</p>
+                                </td>
+                                <td style="width:77px;border-top:1px solid #000;border-left:1px solid #000;border-bottom:1px solid #000;border-right:1px solid #000">
+                                    <p style="text-align:center;">text</p>
+                                </td>
+                                <td style="width:92px;border-top:1px solid #000;border-left:1px solid #000;border-bottom:1px solid #000;border-right:1px solid #000">
+                                    <p style="text-align:right;">text</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:77px;border-top:1px solid #000;border-left:1px solid #000;border-bottom:1px solid #000;border-right:1px solid #000">
+                                    <p style="text-align:justify;">Text</p>
+                                </td>
+                                <td style="width:77px;border-top:1px solid #000;border-left:1px solid #000;border-bottom:1px solid #000;border-right:1px solid #000">
+                                    <p style="text-align:center;">text</p>
+                                </td>
+                                <td style="width:92px;border-top:1px solid #000;border-left:1px solid #000;border-bottom:1px solid #000;border-right:1px solid #000">
+                                    <table style="border:1px solid #000;border-collapse:collapse;">
+                                        <colgroup>
+                                            <col style="width:39px;"/>
+                                            <col style="width:39px;"/>
+                                        </colgroup>
+                                        <tr>
+                                            <td style="width:33px;border-top:1px solid #000;border-left:1px solid #000;border-bottom:1px solid #000;border-right:1px solid #000">
+                                                <p style="text-align:justify;">text</p>
+                                            </td>
+                                            <td style="width:33px;border-top:1px solid #000;border-left:1px solid #000;border-bottom:1px solid #000;border-right:1px solid #000">
+                                                <p style="text-align:justify;">text</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:33px;border-top:1px solid #000;border-left:1px solid #000;border-bottom:1px solid #000;border-right:1px solid #000">
+                                                <p style="text-align:justify;">text</p>
+                                            </td>
+                                            <td style="width:33px;border-top:1px solid #000;border-left:1px solid #000;border-bottom:1px solid #000;border-right:1px solid #000">
+                                                <p style="text-align:justify;">text</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <p style="text-align:justify;font-family:&quot;Tahoma&quot;;"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <p style="text-align:justify;font-family:&quot;Tahoma&quot;;"/>
+                    </td>
+                    <td style="width:60px;border:1px solid #000">
+                        <p style="text-align:justify;">text</p>
+                    </td>
+                    <td style="width:50px;border:1px solid #000">
+                        <p style="text-align:justify;">Text</p>
+                    </td>
+                    <td style="width:123px;border:1px solid #000">
+                        <p style="text-align:justify;">Text</p>
+                    </td>
+                    <td style="width:123px;border:1px solid #000">
+                        <p style="text-align:justify;">text</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:260px;border:1px solid #000">
+                        <p style="text-align:justify;">Text</p>
+                    </td>
+                    <td style="width:60px;border:1px solid #000">
+                        <p style="text-align:justify;">text</p>
+                    </td>
+                    <td style="width:50px;border:1px solid #000">
+                        <p style="text-align:justify;">Text</p>
+                    </td>
+                    <td style="width:123px;border:1px solid #000">
+                        <p style="text-align:justify;">text</p>
+                    </td>
+                    <td style="width:123px;border:1px solid #000">
+                        <p style="text-align:justify;">text</p>
+                    </td>
+                </tr>
+            </table>
+            <p style="text-align:center;">Obr 1.</p>
+            <p/>
+            <div class="subsubsection" id="k10">
+                <h4>V tabulce můžeme použít následující formátování: <a href="#list">
+                    <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+                </a>
+                </h4>
+                <ul>
+                    <li>barvu pozadí jak celé tabulky tak jednotlivých buněk, </li>
+                    <li style="font-weight:bold;">
+                        <span style="font-weight:bold;">tučné písmo, </span>
+                    </li>
+                    <li>
+                        <span style="font-style:italic;">Italiku</span>, </li>
+                    <li>
+                        <span style="text-decoration:underline;">podtržené</span>
+                        <span style="text-decoration:underline;">písmo</span>
+                    </li>
+                    <li>
+                        <span style="color:#00FF00;">barvu písma</span>. </li>
+                    <li style="font-family:&quot;Arial&quot;;">
+                        <span style="font-family:&quot;Arial&quot;;">Změnu písma</span>
+                    </li>
+                    <li>je podporována šířka okraje tabulky</li>
+                </ul>
+                <p/>
+            </div>
+        </div>
+        <div class="subsection" id="k11">
+            <h3>Na co si dejte pozor<a href="#list">
+                <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+            </a>
+            </h3>
+            <ul>
+                <li>tabulka <span style="font-weight:bold;">nesmí</span> být v nadpisu. </li>
+                <li>nepoužívejte slučované buňky viz obr 2 (nepoužitelné) a obr 3 (vhodná realizace)</li>
+            </ul>
+            <table style="border:1px solid #000;border-collapse:collapse;">
+                <colgroup>
+                    <col style="width:303px;"/>
+                    <col style="width:303px;"/>
+                </colgroup>
+                <tr>
+                    <td style="width:615px;border:1px solid #000" colspan="2">
+                        <p style="text-align:justify;font-family:&quot;Arial&quot;;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:308px;border:1px solid #000">
+                        <p style="text-align:justify;font-family:&quot;Arial&quot;;"/>
+                    </td>
+                    <td style="width:308px;border:1px solid #000">
+                        <p style="text-align:justify;font-family:&quot;Arial&quot;;"/>
+                    </td>
+                </tr>
+            </table>
+            <p style="text-align:center;">Obr 2. sloučená buňka se nepřevede</p>
+            <p style="text-align:center;"/>
+            <table style="border:1px solid #000;border-collapse:collapse;">
+                <colgroup>
+                    <col style="width:605px;"/>
+                </colgroup>
+                <tr>
+                    <td style="width:615px;border:1px solid #000">
+                        <p style="text-align:justify;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:615px;border:1px solid #000">
+                        <table style="border:1px solid #000;border-collapse:collapse;">
+                            <colgroup>
+                                <col style="width:295px;"/>
+                                <col style="width:295px;"/>
+                            </colgroup>
+                            <tr>
+                                <td style="width:300px;border:1px solid #000">
+                                    <p style="text-align:justify;"/>
+                                </td>
+                                <td style="width:300px;border:1px solid #000">
+                                    <p style="text-align:justify;"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <p style="text-align:justify;"/>
+                    </td>
+                </tr>
+            </table>
+            <p style="text-align:center;">Obr 3. tabulka je složena ze dvou existujících tabulek</p>
+        </div>
+        <div class="subsection" id="k12">
+            <h3>Nepodporované formátování pro tabulky<a href="#list">
+                <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+            </a>
+            </h3>
+            <ul>
+                <li>tloušťka čar buněk podporována není</li>
+            </ul>
+        </div>
+        <div class="subsection" id="k13">
+            <h3>Tip<a href="#list">
+                <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+            </a>
+            </h3>
+            <p>Pomocí tabulek bez ohraničení lze provádět formátování stránek či nahradit chybějící tabelátory. Pokud chcete například odskočit text lze to provést pomocí tabulky se dvěma sloupci kdy první sloupec je prázdný a druhý obsahuje text. Ohraničení tabulky musí být vypnuto jinak bude vidět, že jde o tabulku. Viz obr 4.</p>
+            <p/>
+            <p/>
+            <table>
+                <colgroup>
+                    <col style="width:67px;"/>
+                    <col style="width:539px;"/>
+                </colgroup>
+                <tr>
+                    <td style="width:68px;">
+                        <p/>
+                    </td>
+                    <td style="width:547px;">
+                        <p>1 řádek</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:68px;">
+                        <p/>
+                    </td>
+                    <td style="width:547px;">
+                        <p>2 řádek</p>
+                    </td>
+                </tr>
+            </table>
+            <p style="text-align:center;">Obr 4.</p>
+            <p style="text-align:center;"/>
+        </div>
+    </div>
+</div>
+
+
+<div class="chapter">
+    <div class="section" id="k15">
+        <h2>Zarovnání textu<a href="#list">
+            <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+        </a>
+        </h2>
+        <p>Současná verze tutora neumí různé typy zarovnání.</p>
+        <p style="text-align:right;">Bylo by dobré, kdybys zvládl zarovnávat i doprava.</p>
+        <p style="text-align:center;">Na střed by se také hodilo.</p>
+        <p>A o standardním levém zarovnání ani nemluvím.</p>
+        <p style="text-align:justify;">Zarovnání do bloku je na zvážení, ale možná bych to uživatelů umožnil. Bohužel teď musím napsat delší text, abych měl vizuální potvrzení, že jsem klikl na správnou ikonku. To by mohlo stačit.</p>
+        <p style="text-align:justify;"/>
+    </div>
+    <div class="section" id="k16">
+        <h2>Vkládání materiálů<a href="#list">
+            <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+        </a>
+        </h2>
+        <p>Obrázky dozajista vkládáš …</p>
+        <p>
+            <span>
+                <img src="..//31FE6C29-C095-4AB4-BF53-B34D5328AB17.jpg" alt="" style="width:96px;height:136px;"/>
+            </span>
+        </p>
+        <p/>
+        <p>… ale tutor umí i vzít soubor, nahrát ho na server a <a href="RESOURCE/4A58C23F-8C53-4EBC-9021-5594E1F1A297.pdf">
+            <span>nalinkovat</span>
+        </a>.</p>
+        <p/>
+    </div>
+    <div class="section" id="k17">
+        <h2>Vnořené seznamy<a href="#list">
+            <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+        </a>
+        </h2>
+        <p>A kdyby se ti náhodou podařilo korektně převádět vnořené seznamy, také by to pomohlo.</p>
+        <ol style="list-style: decimal;">
+            <li>Jedna</li>
+            <li>Dva</li>
+            <ol style="list-style: decimal;">
+                <li>Tři</li>
+                <li>Čtyři</li>
+            </ol>
+            <li>Pět</li>
+        </ol>
+        <ol style="list-style: lower-latin;">
+            <li>Cos to</li>
+            <li>Honzo</li>
+            <li>Cos to</li>
+            <li>Sněd</li>
+        </ol>
+        <ol style="list-style: decimal;">
+            <li>Brambory</li>
+            <li>Pečený</li>
+            <li>Byly</li>
+            <li>Málo</li>
+            <li>Maštěný</li>
+            <li/>
+            <li>Cos</li>
+            <li>To</li>
+            <li>Janku Sněd?</li>
+        </ol>
+        <ol style="list-style: lower-latin;">
+            <li>Xsx</li>
+            <li>Xsx</li>
+            <li/>
+        </ol>
+        <p/>
+    </div>
+    <div class="section" id="k18">
+        <h2>Úkoly<a href="#list">
+            <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+        </a>
+        </h2>
+        <p>Možná chybí i zadávání úkolů. Abys to neměl tak jednoduché, existuje mnoho variant.</p>
+        <div class="subsection" id="k19">
+            <h3>Běžné úkoly<a href="#list">
+                <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+            </a>
+            </h3>
+            <p class="note DistPozn">
+                <a href="index.php?pageid=5207&amp;onlycontent=1&amp;task_id={{task-short-0}}&amp;id_dbound={{dbound-3}}" onclick="openw('external_680_400_3','index.php?pageid=5207&amp;onlycontent=1&amp;task_id={{task-short-0}}&amp;id_dbound={{dbound-3}}');return false;">
+                    <img src="TEMPLATEimages/text_icons/6b.gif" alt="Otázky které vyžadují písemnou odpověd" title="Otázky které vyžadují písemnou odpověd"/>
+                </a>
+            </p>
+            <p class="task-short Ukol has-note"/>
+            <p class="note DistPozn">
+                <a href="index.php?pageid=5207&amp;onlycontent=1&amp;task_id={{task-long-0}}&amp;id_dbound={{dbound-3}}" onclick="openw('external_680_400_3','index.php?pageid=5207&amp;onlycontent=1&amp;task_id={{task-long-0}}&amp;id_dbound={{dbound-3}}');return false;">
+                    <img src="TEMPLATEimages/text_icons/6d.gif" alt="Korespondenční úkoly" title="Korespondenční úkoly"/>
+                </a>
+            </p>
+            <p class="task-long Ukol has-note"/>
+            <p class="after-note"/>
+        </div>
+        <div class="subsection" id="k20">
+            <h3>Parametrizované úkoly<a href="#list">
+                <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+            </a>
+            </h3>
+            <p>Již v šabloně můžete nastavit parametry úkolu (dlouhého i krátkého). Činí se tak závorkou na konci úkolu ve formátu (Název úkolu;Počet bodů;Úroveň;Volitelný x Povinný). Závorka je součástí odstavce úkol (je na stejném řádku jako poslední věta zadání). V závorce musí být vyplněn buď pouze Název úkolu, nebo všechny 4 parametry. Není možné použít třeba jen body a volitelnost. Uzavírací znak ")" nesmí být formátován, tzn. že můžete použít pouze styl úkolu. Při použití tučného, podtrženého, ... písma nebude převod parametrů fungovat.</p>
+            <p/>
+            <div class="subsubsection" id="k21">
+                <h4>Krátké úkoly<a href="#list">
+                    <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+                </a>
+                </h4>
+                <p class="note DistPozn">
+                    <a href="index.php?pageid=5207&amp;onlycontent=1&amp;task_id={{task-short-1}}&amp;id_dbound={{dbound-3}}" onclick="openw('external_680_400_3','index.php?pageid=5207&amp;onlycontent=1&amp;task_id={{task-short-1}}&amp;id_dbound={{dbound-3}}');return false;">
+                        <img src="TEMPLATEimages/text_icons/6b.gif" alt="Otázky které vyžadují písemnou odpověd" title="Otázky které vyžadují písemnou odpověd"/>
+                    </a>
+                </p>
+                <p class="task-short Ukol has-note">Příklad použití: Pokusný úkol. </p>
+                <p class="after-note"/>
+            </div>
+            <div class="subsubsection" id="k22">
+                <h4>Dlouhé úkoly<a href="#list">
+                    <img src="TEMPLATEimages/back_to_list.gif" alt="Zpátky na obsah textu" title="Zpátky na obsah textu" width="15" height="15"/>
+                </a>
+                </h4>
+                <p>Pomocí parametrů je možné ovlivnit zobrazení dlouhých úkolů přímo v textu. Nové parametry Ignorovat popis a Použít název se uvádějí do závorky za parametry ostatní. Příklad využití vidíte na následujících obrázcích.</p>
+                <p/>
+                <p>Standardní zadání se všemi parametry:</p>
+                <p class="note DistPozn">
+                    <a href="index.php?pageid=5207&amp;onlycontent=1&amp;task_id={{task-long-1}}&amp;id_dbound={{dbound-3}}" onclick="openw('external_680_400_3','index.php?pageid=5207&amp;onlycontent=1&amp;task_id={{task-long-1}}&amp;id_dbound={{dbound-3}}');return false;">
+                        <img src="TEMPLATEimages/text_icons/6d.gif" alt="Korespondenční úkoly" title="Korespondenční úkoly"/>
+                    </a>
+                </p>
+                <p class="task-long Ukol has-note">Pokuste se vytvořit analogii mezi uvedenými typy školního klimatu a mateřskou školou. Určete, ke kterému typu školního klimatu patří Vaše mateřská škola, na které působíte? Charakterizujte typ jejího školního klimatu. </p>
+                <p class="after-note"/>
+                <p>Parametr Ignorovat popis zanechá v textu pouze ikonu úkolu:</p>
+                <p class="note DistPozn">
+                    <a href="index.php?pageid=5207&amp;onlycontent=1&amp;task_id={{task-long-2}}&amp;id_dbound={{dbound-3}}" onclick="openw('external_680_400_3','index.php?pageid=5207&amp;onlycontent=1&amp;task_id={{task-long-2}}&amp;id_dbound={{dbound-3}}');return false;">
+                        <img src="TEMPLATEimages/text_icons/6d.gif" alt="Korespondenční úkoly" title="Korespondenční úkoly"/>
+                    </a>
+                </p>
+                <p class="task-long Ukol has-note"/>
+                <p class="after-note"/>
+                <p>Parametr Použít název zanechá v textu název úkolu s ikonou:</p>
+                <p class="note DistPozn">
+                    <a href="index.php?pageid=5207&amp;onlycontent=1&amp;task_id={{task-long-3}}&amp;id_dbound={{dbound-3}}" onclick="openw('external_680_400_3','index.php?pageid=5207&amp;onlycontent=1&amp;task_id={{task-long-3}}&amp;id_dbound={{dbound-3}}');return false;">
+                        <img src="TEMPLATEimages/text_icons/6d.gif" alt="Korespondenční úkoly" title="Korespondenční úkoly"/>
+                    </a>
+                </p>
+                <p class="task-long Ukol has-note">Testovací název</p>
+                <p class="after-note"/>
+                <p>Tyto parametry je možné použít pouze v kombinaci se všemi ostatními. Není tedy možné použít pouze <span style="font-style:italic;">Název úkolu</span> a <span style="font-style:italic;">Ignorovat popis</span> nebo <span style="font-style:italic;">Použít název</span>.</p>
+                <p/>
+                <p>Vzor i s obrázky na jdeš na <a href="http://lmsunifor.com/autor-cd/2007/dokumenty/styly.htm">
+                    <span>http://lmsunifor.com/autor-cd/2007/dokumenty/styly.htm</span>
+                </a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
